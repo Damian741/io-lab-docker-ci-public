@@ -47,9 +47,9 @@ image:
 push: image
 	# TODO: two commands, first pushes the latest image, second pushes the image tagged with specyfic tag
 	#docker push .
-	docker tag  io-lab-docker-ci:latest damian741/io-lab-docker-ci:latest
+	#docker tag  io-lab-docker-ci:latest damian741/io-lab-docker-ci:latest
 	docker tag  io-lab-docker-ci:$(TAG) damian741/io-lab-docker-ci:$(TAG)
-	sudo docker push damian741/io-lab-docker-ci:latest 
+	#sudo docker push damian741/io-lab-docker-ci:latest 
 	sudo docker push damian741/io-lab-docker-ci:$(TAG)
 
 clean:
